@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDWC.PageDetail">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center" Padding="10">
+            <StackLayout>
+                <Label Text="Details" VerticalOptions="Center" HorizontalOptions="Center" FontSize="25" FontAttributes="Bold" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Padding="10">
+                <Label x:Name="lblId" VerticalOptions="Center" HorizontalOptions="Center" FontSize="15" FontAttributes="Bold" />
+                <Label x:Name="lblNome" VerticalOptions="Center" HorizontalOptions="Center"  />
+                <Label x:Name="lblSpecialty" VerticalOptions="Center" HorizontalOptions="Center"  />
+                <Label x:Name="lblValue" VerticalOptions="Center" HorizontalOptions="Center"  />
+            </StackLayout>
+            <StackLayout Orientation="Vertical" HorizontalOptions="Center" Padding="10">
+                <Label x:Name="lblRequest_id" VerticalOptions="Center" HorizontalOptions="Center"  />
+                <Label x:Name="lblStartDate" VerticalOptions="Center" HorizontalOptions="Center"  />
+                <Label x:Name="lblTurnaround" VerticalOptions="Center" HorizontalOptions="Center"  />
+            </StackLayout>
+            <StackLayout Orientation="Vertical">
+                <Label x:Name="lblWords" VerticalOptions="Center" HorizontalOptions="Center"  />
+                <Label x:Name="lblFrom" VerticalOptions="Center" HorizontalOptions="Center"  />
+                <Label x:Name="lblTo" VerticalOptions="Center" HorizontalOptions="Center"  />
+                <Label x:Name="lblType" VerticalOptions="Center" HorizontalOptions="Center"  />
+                <Label x:Name="lblState" VerticalOptions="Center" HorizontalOptions="Center"  />
+            </StackLayout>
+            <StackLayout Margin="0,30,0,0">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Button Text="Approve" Clicked="ApproveQuote" BackgroundColor="Green" TextColor="Black"/>
+                    <Button Text="Reject" Clicked="RejectQuote" BackgroundColor="Red" TextColor="Black"/>
+                </StackLayout>
+            </StackLayout>
+            <Label HorizontalTextAlignment="Center" Margin="0,0,0,10" x:Name="txtUpdateResult" TextColor="Black" FontSize="Large"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

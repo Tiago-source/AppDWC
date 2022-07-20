@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppDWC.PinPage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
+            <Label Margin="0,0,0,10" Text="Configure PIN" FontAttributes="Bold" FontSize="Large" TextColor="Gray" HorizontalTextAlignment="Center" ></Label>
+            <StackLayout Padding="10,10,10,10">
+                <Label x:Name="lblEmail" VerticalOptions="Center" HorizontalOptions="Center"  />
+                <Label Text="Insert Four Digit PIN to access account"/>
+                <Entry x:Name="txtFirstDigit" Placeholder="Enter First Digit"></Entry>
+                <Entry x:Name="txtSecDigit" Placeholder="Enter Second Digit"></Entry>
+                <Entry x:Name="txtTrdDigit" Placeholder="Enter Third Digit"></Entry>
+                <Entry x:Name="txtFrtDigit" Placeholder="Enter Fourth Digit"></Entry>
+            </StackLayout>
+            <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                <Button x:Name="btnRegisteration" BackgroundColor="LightSeaGreen" WidthRequest="200" Text="Register" Clicked="btnRegistPin_Clicked" />
+                <Button x:Name="btnCancel" BackgroundColor="PaleVioletRed" WidthRequest="200" Text="Cancel" Clicked="btnCancel_Clicked" />
+            </StackLayout>
+            <Label HorizontalTextAlignment="Center" Margin="0,0,0,10" x:Name="txtRegisterResult" TextColor="Black" FontSize="Large"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

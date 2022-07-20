@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"    
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"    
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"    
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"    
+             mc:Ignorable="d"    
+             x:Class="AppDWC.MainPage">
+
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
+        <Image Source="icon.jpg" WidthRequest="150" HeightRequest="150" ></Image>
+        <Label Margin="0,0,0,10" Text="Quote Approval App" FontAttributes="Bold" FontSize="Large" TextColor="Black" HorizontalTextAlignment="Center" ></Label>
+        <StackLayout Padding="10,10,10,10">
+            <Entry x:Name="txtEmail" Placeholder="Enter Email"></Entry>
+            <Entry x:Name="txtPassword" Placeholder="Enter Password" IsPassword="True"></Entry>
+            <Entry x:Name="txtPin" Placeholder="Enter Pin" IsVisible="false"></Entry>
+            <Label FontSize="Caption" Text="If you don't have credentials to SignIn? Please click on Registeration button."/>
+        </StackLayout>
+
+        <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+            <Button BackgroundColor="Beige" x:Name="btnSignIn" WidthRequest="200" Text="SignIn" Clicked="btnSignIn_Clicked" />
+            <Button BackgroundColor="LightSeaGreen" x:Name="btnRegister" WidthRequest="200" Text="Registeration" Clicked="btnRegister_Clicked" />
+            <Button BackgroundColor="LightSeaGreen" x:Name="btnPin" WidthRequest="400" Text="Signin" Clicked="btnPin_Clicked" IsVisible="false" />
+        </StackLayout>
+        <Label HorizontalTextAlignment="Center" Margin="0,0,0,10" x:Name="txtSignInResult" TextColor="Black" FontSize="Large"/>
+    </StackLayout>
+
+</ContentPage> 

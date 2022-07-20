@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"    
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"    
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"    
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"    
+             mc:Ignorable="d"    
+             x:Class="AppDWC.DashboardPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout>
+                <ListView  x:Name="lvQuotes" RowHeight="90" IsPullToRefreshEnabled="True" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="Fill" Padding="10">
+                                    <StackLayout Orientation="Horizontal" Padding="10,5,5,10" WidthRequest="400" BackgroundColor="Aquamarine">
+                                        <Label Text = "{Binding id}" FontSize="15" FontAttributes="Bold" />
+                                        <Label Text = "{Binding nome}" />
+                                        <Label Text = "{Binding value}" />
+                                        <Label Text = "{Binding state}" Padding="140,0,0,0" FontSize="15" FontAttributes="Bold"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+            <Button Text="Logout" Clicked="BackButton_Clicked" x:Name="BackButton"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

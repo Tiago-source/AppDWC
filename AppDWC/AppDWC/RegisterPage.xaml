@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"    
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"    
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"    
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"    
+             mc:Ignorable="d"    
+             x:Class="AppDWC.RegisterPage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
+            <Label Margin="0,0,0,10" Text="User Register" FontAttributes="Bold" FontSize="Large" TextColor="Gray" HorizontalTextAlignment="Center" ></Label>
+            <StackLayout Padding="10,10,10,10">
+                <Entry x:Name="txtFirstName" Placeholder="Enter First Name"></Entry>
+                <Entry x:Name="txtLastName" Placeholder="Enter Last Name"></Entry>
+                <Entry x:Name="txtMobile" Placeholder="Enter Mobile"></Entry>
+                <Entry x:Name="txtEmail" Placeholder="Enter Email"></Entry>
+                <Entry x:Name="txtPassword" Placeholder="Enter Password" IsPassword="True"></Entry>
+            </StackLayout>
+            <StackLayout  HorizontalOptions="CenterAndExpand" Orientation="Horizontal">
+                <Button x:Name="btnRegisteration" BackgroundColor="LightSeaGreen" WidthRequest="200" Text="Register" Clicked="btnRegisteration_Clicked" />
+                <Button x:Name="btnCancel" BackgroundColor="PaleVioletRed" WidthRequest="200" Text="Cancel" Clicked="btnCancel_Clicked" />
+            </StackLayout>
+            <Label HorizontalTextAlignment="Center" Margin="0,0,0,10" x:Name="txtRegisterResult" TextColor="Black" FontSize="Large"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>  
